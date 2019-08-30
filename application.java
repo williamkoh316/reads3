@@ -30,7 +30,7 @@ class Application {
 
     public static void main(String[] args) throws IOException {
 
-        String bucketName ="cfms-s3";
+        String bucketName ="xxxx-s3";
 
         AmazonS3 s3client = AmazonS3ClientBuilder
                 .standard()
@@ -51,7 +51,7 @@ class Application {
                 .lines().collect(Collectors.joining("\n"));
 
         System.out.println("WHAT IS INSIDE: " + result );
-        //Files.copy(inputStream, new File("/Users/littlestar/Desktop/cfms/hw.txt").toPath()); //location to local path
+        //Files.copy(inputStream, new File("/Users/xxxx/Desktop/xxx/hw.txt").toPath()); //location to local path
 
 
         inputStream.close();
